@@ -14,29 +14,44 @@ import java.util.ArrayList;
 
 public class Treino extends AppCompatActivity {
     private ListView id_lista_treino;
-    private String posicao;
+    public String id_aux;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treino);
         id_lista_treino = findViewById(R.id.id_list_treino);
-        Toast.makeText(this, posicao, Toast.LENGTH_LONG).show();
         geraTreino();
+
+
     }
-    public void geraTreino(){
+    public String geraTreino(){
+
         ArrayList <String> treino = new ArrayList<>();
-        treino.add("Peito");
-        treino.add("Costas");
-        treino.add("Biceps");
+        treino.add("Treino - A");
+        treino.add("Treino - B");
+        treino.add("Treino - C");
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,treino);
         id_lista_treino.setAdapter(adapter);
-    }
-    public void recuperaTreino(){
         id_lista_treino.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                posicao = (String) parent.getItemAtPosition(position).toString();
+              id_aux= id_lista_treino.getItemAtPosition(position).toString();
             }
         });
+        return id_aux;
     }
+    public void validaTreino(){
+        String id_aux = geraTreino();
+        if(id_aux.equalsIgnoreCase("Treino - A")){
+
+        }else if (id_aux.equalsIgnoreCase("Treino - B")) {
+
+        }else if(id_aux.equalsIgnoreCase("Treino - C")) {
+
+        }
+    }
+
+
+
+
 }
