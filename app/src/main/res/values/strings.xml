@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Gym Manager</string>
+    <string name="nome">Nome:</string>
+    <string name="senha">Senha:</string>
+    <string name="sobrenome">Sobrenome:</string>
+    <string name="salvar_e_ir">Salvar e Ir</string>
+    <string name="limpar">Limpar</string>
+    <string name="termos">Termos:</string>
+    <string name="lingua_materna">Lingua materna:</string>
+    <string name="portugues">Portugues</string>
+    <string name="ingles">Inglês</string>
+    <string name="espanhol">Espanhol</string>
+    <string name="genero">Selecione seu Gênero:</string>
+    <string name="torax">Medida do Torax:</string>
+    <string name="cintura">Medida do Cintura:</string>
+    <string name="qualdril">Medida do Quadril:</string>
+    <string name="braco">Medida do Braço:</string>
+    <string name="coxa">Medida do Coxa:</string>
+    <string name="altura">Medida do Altura:</string>
+    <string name="peso">Medida do Peso:</string>
+    <string name="atualizar_cadastro">Atualizar Cadastro</string>
+</resources>
