@@ -7,7 +7,7 @@
     tools:context=".Treino">
 
     <ListView
-        android:id="@+id/id_list_treino"
+        android:id="@+id/id_list_treino_c"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

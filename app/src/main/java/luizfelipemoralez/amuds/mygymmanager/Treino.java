@@ -2,13 +2,12 @@ package luizfelipemoralez.amuds.mygymmanager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,7 +18,7 @@ public class Treino extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treino);
-        id_lista_treino = findViewById(R.id.id_list_treino);
+        id_lista_treino = findViewById(R.id.id_list_treino_c);
         geraTreino();
 
 
@@ -43,7 +42,7 @@ public class Treino extends AppCompatActivity {
     public void validaTreino(){
         String id_aux = geraTreino();
         if(id_aux.equalsIgnoreCase("Treino - A")){
-
+            Intent intent = new Intent(this,TreinoA.class);
         }else if (id_aux.equalsIgnoreCase("Treino - B")) {
 
         }else if(id_aux.equalsIgnoreCase("Treino - C")) {
