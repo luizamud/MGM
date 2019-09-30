@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
             verificaTexto();
         }
  **/
-        Intent intent = new Intent(this,Ficha_Usuario.class);
+        Intent intent = new Intent(this,Treino.class);
         startActivity(intent);
     }
 
