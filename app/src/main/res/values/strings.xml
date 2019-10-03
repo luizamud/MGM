@@ -19,4 +19,16 @@
     <string name="altura">Medida do Altura:</string>
     <string name="peso">Medida do Peso:</string>
     <string name="atualizar_cadastro">Atualizar Cadastro</string>
+    <string name="qtd_repete">Quantidade de repetições</string>
+    <string name="descanco">Descanço:</string>
+    
+    <string-array name="treinostipos">
+        <item>Treino A:</item>
+        <item>Treino B:</item>
+        <item>Treino C:</item>
+    </string-array>
+    
+    <string-array name="treino_a">
+        <item></item>
+    </string-array>
 </resources>

@@ -60,10 +60,6 @@
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/layout_activity_treino_b.xml.flat",
-        "source": "/home/scriptkid/Desktop/MyGymManager/app/src/main/res/layout/activity_treino_b.xml"
-    },
-    {
         "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "/home/scriptkid/Desktop/MyGymManager/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
@@ -114,6 +110,10 @@
     {
         "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/layout_activity_tipo_a.xml.flat",
+        "source": "/home/scriptkid/Desktop/MyGymManager/app/src/main/res/layout/activity_tipo_a.xml"
     },
     {
         "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/anim_abc_tooltip_enter.xml.flat",
@@ -840,8 +840,8 @@
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/layout_activity_treino_c.xml.flat",
-        "source": "/home/scriptkid/Desktop/MyGymManager/app/src/main/res/layout/activity_treino_c.xml"
+        "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/layout_item_treino.xml.flat",
+        "source": "/home/scriptkid/Desktop/MyGymManager/app/src/main/res/layout/item_treino.xml"
     },
     {
         "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -894,10 +894,6 @@
     {
         "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/layout_activity_treino_a.xml.flat",
-        "source": "/home/scriptkid/Desktop/MyGymManager/app/src/main/res/layout/activity_treino_a.xml"
     },
     {
         "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1480,16 +1476,16 @@
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/46da25c3e2ae6308b2227b660caa604d/core-1.0.1/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/layout_activity_treino.xml.flat",
-        "source": "/home/scriptkid/Desktop/MyGymManager/app/src/main/res/layout/activity_treino.xml"
-    },
-    {
         "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/anim_abc_shrink_fade_out_from_bottom.xml.flat",
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/layout_activity_interface_treino.xml.flat",
+        "source": "/home/scriptkid/Desktop/MyGymManager/app/src/main/res/layout/activity_interface_treino.xml"
     },
     {
         "merged": "/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",

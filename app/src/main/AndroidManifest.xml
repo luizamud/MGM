@@ -12,10 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TreinoC"></activity>
-        <activity android:name=".TreinoB" />
-        <activity android:name=".TreinoA" />
-        <activity android:name=".Treino" />
+        <activity android:name=".Tipo_A"></activity>
+        <activity android:name=".SelecionaTreino" />
         <activity android:name=".Ficha_Usuario" />
         <activity android:name=".MainActivity">
             <intent-filter>

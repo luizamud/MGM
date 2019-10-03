@@ -756,11 +756,15 @@ id id_nome
 id id_peso
 id id_portugues
 id id_quadril
+id id_recycle_A
 id id_senha
 id id_sobrenome
 id id_spinner_genero
 id id_termos
 id id_torax
+id id_treino_descanso
+id id_treino_nome
+id id_treino_repete
 id ifRoom
 id image
 id info
@@ -877,11 +881,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_ficha_usuario
+layout activity_interface_treino
 layout activity_main
-layout activity_treino
-layout activity_treino_a
-layout activity_treino_b
-layout activity_treino_c
+layout activity_tipo_a
+layout item_treino
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -940,6 +943,7 @@ string atualizar_cadastro
 string braco
 string cintura
 string coxa
+string descanco
 string espanhol
 string genero
 string ingles
@@ -948,6 +952,7 @@ string lingua_materna
 string nome
 string peso
 string portugues
+string qtd_repete
 string qualdril
 string salvar_e_ir
 string search_menu_title

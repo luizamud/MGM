@@ -16,7 +16,7 @@
 12-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:6:18-37
 13
 14    <application
-14-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:8:5-27:19
+14-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:8:5-25:19
 15        android:allowBackup="true"
 15-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -33,35 +33,29 @@
 22        android:testOnly="true"
 23        android:theme="@style/AppTheme" >
 23-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:14:9-40
-24        <activity android:name="luizfelipemoralez.amuds.mygymmanager.TreinoC" />
-24-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:15:9-54
-24-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:15:19-42
-25        <activity android:name="luizfelipemoralez.amuds.mygymmanager.TreinoB" />
-25-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:16:9-45
-25-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:16:19-42
-26        <activity android:name="luizfelipemoralez.amuds.mygymmanager.TreinoA" />
-26-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:17:9-45
-26-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:17:19-42
-27        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino" />
-27-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:18:9-44
-27-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:18:19-41
-28        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Ficha_Usuario" />
-28-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:19:9-51
-28-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:19:19-48
-29        <activity android:name="luizfelipemoralez.amuds.mygymmanager.MainActivity" >
-29-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:20:9-26:20
-29-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:20:19-47
-30            <intent-filter>
-30-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:21:13-25:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:22:17-69
-31-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:22:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:24:17-77
-33-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:24:27-74
-34            </intent-filter>
-35        </activity>
-36    </application>
-37
-38</manifest>
+24        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Tipo_A" />
+24-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:15:9-53
+24-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:15:19-41
+25        <activity android:name="luizfelipemoralez.amuds.mygymmanager.SelecionaTreino" />
+25-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:16:9-53
+25-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:16:19-50
+26        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Ficha_Usuario" />
+26-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:17:9-51
+26-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:17:19-48
+27        <activity android:name="luizfelipemoralez.amuds.mygymmanager.MainActivity" >
+27-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:18:9-24:20
+27-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:18:19-47
+28            <intent-filter>
+28-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:19:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:20:17-69
+29-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:20:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:22:17-77
+31-->/home/scriptkid/Desktop/MyGymManager/app/src/main/AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34    </application>
+35
+36</manifest>

@@ -21,10 +21,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.TreinoC" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.TreinoB" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.TreinoA" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Tipo_A" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.SelecionaTreino" />
         <activity android:name="luizfelipemoralez.amuds.mygymmanager.Ficha_Usuario" />
         <activity android:name="luizfelipemoralez.amuds.mygymmanager.MainActivity" >
             <intent-filter>
