@@ -879,6 +879,9 @@ layout abc_tooltip
 layout activity_ficha_usuario
 layout activity_main
 layout activity_treino
+layout activity_treino_a
+layout activity_treino_b
+layout activity_treino_c
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

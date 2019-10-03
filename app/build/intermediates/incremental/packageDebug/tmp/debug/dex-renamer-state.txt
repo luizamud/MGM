@@ -1,7 +1,7 @@
-#Mon Sep 30 19:08:57 BRT 2019
-base.0=/home/scriptkid/MyGymManager/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Wed Oct 02 23:05:18 BRT 2019
+base.0=/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/scriptkid/MyGymManager/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=/home/scriptkid/Desktop/MyGymManager/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex

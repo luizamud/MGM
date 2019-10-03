@@ -8,49 +8,50 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class Treino extends AppCompatActivity {
     private ListView id_lista_treino;
-    public String id_aux;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treino);
-        id_lista_treino = findViewById(R.id.id_list_treino_c);
-        geraTreino();
-
-
+        id_lista_treino = findViewById(R.id.id_list_treino);
+        reciveLista();
+        geraLista();
     }
-    public String geraTreino(){
-
-        ArrayList <String> treino = new ArrayList<>();
-        treino.add("Treino - A");
-        treino.add("Treino - B");
-        treino.add("Treino - C");
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,treino);
-        id_lista_treino.setAdapter(adapter);
+    private void reciveLista(){
         id_lista_treino.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-              id_aux= id_lista_treino.getItemAtPosition(position).toString();
+                String nome = (String) id_lista_treino.getItemAtPosition(position);
+                Toast.makeText(getApplicationContext(), nome, Toast.LENGTH_LONG).show();
+                switch (nome){
+                    case "Treino-A":
+                        Intent intent = new Intent(getApplicationContext(),TreinoA.class);
+                        startActivity(intent);
+                        break;
+                    case "Treino-B":
+                        Intent intent1 = new Intent(getApplicationContext(),TreinoB.class);
+                        startActivity(intent1);
+                        break;
+                    case "Treino-C":
+                        Intent intent2 = new Intent(getApplicationContext(),TreinoC.class);
+                        startActivity(intent2);
+                        break;
+                }
             }
         });
-        return id_aux;
     }
-    public void validaTreino(){
-        String id_aux = geraTreino();
-        if(id_aux.equalsIgnoreCase("Treino - A")){
-            Intent intent = new Intent(this,TreinoA.class);
-        }else if (id_aux.equalsIgnoreCase("Treino - B")) {
-
-        }else if(id_aux.equalsIgnoreCase("Treino - C")) {
-
-        }
+    private void geraLista(){
+        ArrayList <String> treino = new ArrayList<>();
+        treino.add("Treino-A");
+        treino.add("Treino-B");
+        treino.add("Treino-C");
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,treino);
+        id_lista_treino.setAdapter(adapter);
     }
-
-
-
 
 }
