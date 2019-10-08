@@ -11,6 +11,8 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+array treino_a
+array treinostipos
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
