@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
             verificaTexto();
         }
  **/
-        Intent intent = new Intent(this, SelecionaTreino.class);
+        Intent intent = new Intent(this, InterfaceTreino.class);
         startActivity(intent);
     }
 
