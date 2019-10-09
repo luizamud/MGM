@@ -11,9 +11,9 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
-array intervalo
-array repeticao
-array treino
+array intervalo_universal
+array repeticao_a
+array treino_a
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -736,6 +736,7 @@ id id_altura
 id id_atualizar
 id id_braco
 id id_cintura
+id id_constrait_layout
 id id_coxa
 id id_descanco
 id id_espanhol
@@ -755,6 +756,7 @@ id id_label_termos
 id id_label_torax
 id id_limpar
 id id_list_treino
+id id_list_treino_a
 id id_manager_lingua
 id id_nome
 id id_peso
@@ -888,6 +890,9 @@ layout activity_interface_treino
 layout activity_item
 layout activity_main
 layout activity_treino
+layout activity_treino_a
+layout activity_treino_b
+layout activity_treino_c
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

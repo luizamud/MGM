@@ -140,6 +140,10 @@
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/layout/abc_action_bar_up_container.xml"
     },
     {
+        "merged": "/home/scriptkid/Templates/MyGymManager/app/build/intermediates/res/merged/debug/layout_activity_treino_b.xml.flat",
+        "source": "/home/scriptkid/Templates/MyGymManager/app/src/main/res/layout/activity_treino_b.xml"
+    },
+    {
         "merged": "/home/scriptkid/Templates/MyGymManager/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/anim/abc_fade_out.xml"
     },
@@ -764,6 +768,10 @@
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/scriptkid/Templates/MyGymManager/app/build/intermediates/res/merged/debug/layout_activity_treino_a.xml.flat",
+        "source": "/home/scriptkid/Templates/MyGymManager/app/src/main/res/layout/activity_treino_a.xml"
+    },
+    {
         "merged": "/home/scriptkid/Templates/MyGymManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
@@ -850,6 +858,10 @@
     {
         "merged": "/home/scriptkid/Templates/MyGymManager/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/scriptkid/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/scriptkid/Templates/MyGymManager/app/build/intermediates/res/merged/debug/layout_activity_treino_c.xml.flat",
+        "source": "/home/scriptkid/Templates/MyGymManager/app/src/main/res/layout/activity_treino_c.xml"
     },
     {
         "merged": "/home/scriptkid/Templates/MyGymManager/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
