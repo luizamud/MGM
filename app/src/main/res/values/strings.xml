@@ -21,13 +21,42 @@
     <string name="atualizar_cadastro">Atualizar Cadastro</string>
     <string name="qtd_repete">Quantidade de repetições</string>
     <string name="descanco">Descanço:</string>
-    
+    <!-- TREINO A -->
+    <string name="agachamento"></string>
+    <string name="leg_press"></string>
+    <string name="extensora"></string>
+    <string name="stiff"></string>
+    <string name="mesa_flexora"></string>
+    <string name="extensora_lombar"></string>
+    <string name="panturrilha"></string>
+    <!-- TREINO B -->
+    <string name="supino"></string>
+    <string name="supino_halteres"></string>
+    <string name="peck_deck_fly"></string>
+    <string name="desenvolvimento"></string>
+    <string name="elevacao_lateral"></string>
+    <string name="mergulho"></string>
+    <string name="tricps_corda"></string>
+    <!-- TREINO C -->
+    <string name="barra_fixa"></string>
+    <string name="remada_baixa"></string>
+    <string name="puxada_alta"></string>
+    <string name="rosca_alternada"></string>
+    <string name="rosca_direita"></string>
+    <string name="abdominal_crunch"></string>
+    <string name="abdominal_obliquo"></string>
+
+
+
+
+
+
     <string-array name="treinostipos">
         <item>Treino A:</item>
         <item>Treino B:</item>
         <item>Treino C:</item>
     </string-array>
-    
+
     <string-array name="treino_a">
         <item></item>
     </string-array>

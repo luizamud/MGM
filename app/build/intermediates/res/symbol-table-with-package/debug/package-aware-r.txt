@@ -736,6 +736,7 @@ id id_atualizar
 id id_braco
 id id_cintura
 id id_coxa
+id id_descanco
 id id_espanhol
 id id_ingles
 id id_label_altura
@@ -758,15 +759,13 @@ id id_nome
 id id_peso
 id id_portugues
 id id_quadril
-id id_recycle_A
+id id_repeticao
 id id_senha
 id id_sobrenome
 id id_spinner_genero
 id id_termos
 id id_torax
-id id_treino_descanso
-id id_treino_nome
-id id_treino_repete
+id id_treino
 id ifRoom
 id image
 id info
@@ -884,9 +883,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_ficha_usuario
 layout activity_interface_treino
+layout activity_item
 layout activity_main
-layout activity_tipo_a
-layout item_treino
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

@@ -77,11 +77,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/scrip
 		ADDED from /home/scriptkid/Templates/MyGymManager/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from /home/scriptkid/Templates/MyGymManager/app/src/main/AndroidManifest.xml:14:9-40
-activity#luizfelipemoralez.amuds.mygymmanager.Tipo_A
+activity#luizfelipemoralez.amuds.mygymmanager.Treino
 ADDED from /home/scriptkid/Templates/MyGymManager/app/src/main/AndroidManifest.xml:15:9-53
 	android:name
 		ADDED from /home/scriptkid/Templates/MyGymManager/app/src/main/AndroidManifest.xml:15:19-41
-activity#luizfelipemoralez.amuds.mygymmanager.SelecionaTreino
+activity#luizfelipemoralez.amuds.mygymmanager.InterfaceTreino
 ADDED from /home/scriptkid/Templates/MyGymManager/app/src/main/AndroidManifest.xml:16:9-53
 	android:name
 		ADDED from /home/scriptkid/Templates/MyGymManager/app/src/main/AndroidManifest.xml:16:19-50
