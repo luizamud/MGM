@@ -123,7 +123,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void verificaTudo(){
-/**
         if(verificaTexto()){
             if (verificaTermo()){
                 if(verificaLingua()){
@@ -142,9 +141,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
             verificaTexto();
         }
- **/
-        Intent intent = new Intent(this, InterfaceTreino.class);
-        startActivity(intent);
     }
 
     public void sendUser(View view) {

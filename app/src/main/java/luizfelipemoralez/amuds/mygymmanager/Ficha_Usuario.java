@@ -2,6 +2,7 @@ package luizfelipemoralez.amuds.mygymmanager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -126,6 +127,7 @@ public class Ficha_Usuario extends AppCompatActivity{
         if(!reciveGenero().equalsIgnoreCase("")){
             if (verificaTexto()){
                 Toast.makeText(this, "Ok Tudo Certo", Toast.LENGTH_LONG).show();
+                iniciaTela();
             }else{
                 limpaTudo();
             }
@@ -151,5 +153,9 @@ public class Ficha_Usuario extends AppCompatActivity{
 
     public void sendClear(View view) {
         limpaTudo();
+    }
+    private void iniciaTela(){
+        Intent intent = new Intent(getApplicationContext(),InterfaceTreino.class);
+        startActivity(intent);
     }
 }

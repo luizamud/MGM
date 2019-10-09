@@ -6,9 +6,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import luizfelipemoralez.amuds.mygymmanager.utils.RecyclerItemClickListener;
 
 public class Treino_B extends AppCompatActivity {
 
@@ -28,8 +32,7 @@ public class Treino_B extends AppCompatActivity {
         list_treino.setHasFixedSize(true);
         list_treino.addItemDecoration(new DividerItemDecoration(this,LinearLayout.VERTICAL));
         geraLista();
-
-
+        reciveLista();
     }
     public void geraLista(){
         String[] temp_treinos = getResources().getStringArray(R.array.treino_b);
@@ -42,5 +45,28 @@ public class Treino_B extends AppCompatActivity {
         }
         treinoAdapter = new TreinoAdapter(treino);
         list_treino.setAdapter(treinoAdapter);
+    }
+    private void reciveLista(){
+        list_treino.addOnItemTouchListener(
+
+                new RecyclerItemClickListener(getApplicationContext(),
+                        list_treino,
+                        new RecyclerItemClickListener.OnItemClickListener() {
+
+                            @Override
+                            public void onItemClick(View view, int position) {
+
+                                Treino temp_treino = treino.get(position);
+                                Toast.makeText(Treino_B.this, "O treino selecionado foi: "+temp_treino.getNomeTreino(), Toast.LENGTH_SHORT).show();
+                            }
+
+                            @Override
+                            public void onLongItemClick(View view, int position) {
+
+                                Treino temp_treino = treino.get(position);
+                                Toast.makeText(Treino_B.this, "Um toque longo foi reconhecido em cima do treino: "+temp_treino.getNomeTreino(), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                ));
     }
 }
