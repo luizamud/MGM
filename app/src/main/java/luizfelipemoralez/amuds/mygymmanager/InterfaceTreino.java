@@ -14,10 +14,10 @@ import java.util.ArrayList;
 
 public class InterfaceTreino extends AppCompatActivity {
     private ListView id_lista_treino;
-    private String treino_a = "Treino-A";
-    private String treino_b = "Treino-B";
-    private String treino_c = "Treino-C";
-
+    private String treino_a = "Treino A";
+    private String treino_b = "Treino B";
+    private String treino_c = "Treino C";
+//40861180
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -23,7 +23,8 @@ public class Treino_A extends AppCompatActivity {
         setContentView(R.layout.activity_treino_a);
 
         list_treino = findViewById(R.id.id_list_treino_a);
-        layoutManager = new LinearLayoutManager(this);
+        layoutManager = new LinearLayoutManager(getApplicationContext());
+        list_treino.setLayoutManager(layoutManager);
         list_treino.setHasFixedSize(true);
         list_treino.addItemDecoration(new DividerItemDecoration(this,LinearLayout.VERTICAL));
         geraLista();
