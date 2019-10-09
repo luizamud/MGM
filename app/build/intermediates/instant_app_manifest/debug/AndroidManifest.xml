@@ -21,6 +21,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino_C" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino_B" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino_A" />
         <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino" />
         <activity android:name="luizfelipemoralez.amuds.mygymmanager.InterfaceTreino" />
         <activity android:name="luizfelipemoralez.amuds.mygymmanager.Ficha_Usuario" />

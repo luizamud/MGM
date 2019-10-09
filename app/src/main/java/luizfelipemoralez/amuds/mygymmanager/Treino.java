@@ -1,14 +1,37 @@
 package luizfelipemoralez.amuds.mygymmanager;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class Treino {
+    private String nomeTreino;
+    private String repeteTreino;
+    private String esperaTreino;
 
-import android.os.Bundle;
+    public Treino(String nomeTreino, String repeteTreino, String esperaTreino) {
+        this.nomeTreino = nomeTreino;
+        this.repeteTreino = repeteTreino;
+        this.esperaTreino = esperaTreino;
+    }
 
-public class Treino extends AppCompatActivity {
+    public String getNomeTreino() {
+        return nomeTreino;
+    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_treino);
+    public void setNomeTreino(String nomeTreino) {
+        this.nomeTreino = nomeTreino;
+    }
+
+    public String getRepeteTreino() {
+        return repeteTreino;
+    }
+
+    public void setRepeteTreino(String repeteTreino) {
+        this.repeteTreino = repeteTreino;
+    }
+
+    public String getEsperaTreino() {
+        return esperaTreino;
+    }
+
+    public void setEsperaTreino(String esperaTreino) {
+        this.esperaTreino = esperaTreino;
     }
 }

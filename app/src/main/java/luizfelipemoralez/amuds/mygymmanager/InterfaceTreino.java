@@ -31,17 +31,25 @@ public class InterfaceTreino extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String nome = (String) id_lista_treino.getItemAtPosition(position);
-                Toast.makeText(InterfaceTreino.this, nome, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), nome, Toast.LENGTH_LONG).show();
                 switch (nome){
-                    case "Treino-A":
-                            Intent intent = new Intent(getApplicationContext(),Treino.class);
-                            startActivity(intent);
+                    case "Treino A":
+                            Intent intent1 = new Intent(getApplicationContext(),Treino_A.class);
+                            startActivity(intent1);
+                        break;
+                    case "Treino B":
+                        Intent intent2 = new Intent(getApplicationContext(),Treino_B.class);
+                        startActivity(intent2);
+                        break;
+                    case "Treino C":
+                        Intent intent3 = new Intent(getApplicationContext(),Treino_C.class);
+                        startActivity(intent3);
                         break;
 
                     default:
-
+                        Toast.makeText(InterfaceTreino.this, "Por favor escolha um tipo de treino", Toast.LENGTH_LONG).show();
+                        break;
                 }
-
             }
         });
     }

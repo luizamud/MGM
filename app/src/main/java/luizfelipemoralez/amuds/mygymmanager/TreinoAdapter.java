@@ -12,7 +12,7 @@ import java.util.List;
 
 public class TreinoAdapter extends RecyclerView.Adapter<TreinoAdapter.Holder> {
 
-    private List<TreinoItem> dados;
+    private List<Treino> dados;
 
     public class Holder extends RecyclerView.ViewHolder{
 
@@ -28,7 +28,7 @@ public class TreinoAdapter extends RecyclerView.Adapter<TreinoAdapter.Holder> {
         }
     }
 
-    public TreinoAdapter(List<TreinoItem> dados){
+    public TreinoAdapter(List<Treino> dados){
         this.dados = dados;
     }
 
@@ -46,7 +46,7 @@ public class TreinoAdapter extends RecyclerView.Adapter<TreinoAdapter.Holder> {
 
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int i) {
-        TreinoItem treinoItem = dados.get(i);
+        Treino treinoItem = dados.get(i);
 
         holder.id_treino.setText(treinoItem.getNomeTreino());
         holder.id_repete.setText(treinoItem.getRepeteTreino());
