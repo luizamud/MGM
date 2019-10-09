@@ -13,7 +13,11 @@ anim abc_tooltip_enter
 anim abc_tooltip_exit
 array intervalo_universal
 array repeticao_a
+array repeticao_b
+array repeticao_c
 array treino_a
+array treino_b
+array treino_c
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -757,6 +761,8 @@ id id_label_torax
 id id_limpar
 id id_list_treino
 id id_list_treino_a
+id id_list_treino_b
+id id_list_treino_c
 id id_manager_lingua
 id id_nome
 id id_peso

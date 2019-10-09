@@ -32,13 +32,13 @@ public class Treino_A extends AppCompatActivity {
 
     }
     public void geraLista(){
-        String[] treinos = getResources().getStringArray(R.array.treino_a);
-        String[] repeticao =getResources().getStringArray(R.array.repeticao_a);
+        String[] temp_treinos = getResources().getStringArray(R.array.treino_a);
+        String[] temp_repeticao =getResources().getStringArray(R.array.repeticao_a);
         String[] intervalo =getResources().getStringArray(R.array.intervalo_universal);
 
         treino = new ArrayList<>();
-        for (int count = 0;count < treinos.length;count++){
-            treino.add(new Treino(treinos[count],repeticao[count],intervalo[count]));
+        for (int count = 0;count < temp_treinos.length;count++){
+            treino.add(new Treino(temp_treinos[count],temp_repeticao[count],intervalo[count]));
         }
         treinoAdapter = new TreinoAdapter(treino);
         list_treino.setAdapter(treinoAdapter);

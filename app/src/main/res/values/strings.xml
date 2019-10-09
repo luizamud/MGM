@@ -74,6 +74,42 @@
         <item>@string/tres_vezes</item>
         <item>@string/quatro_vezes</item>
     </string-array>
+    <string-array name="treino_b">
+        <item>@string/supino</item>
+        <item>@string/supino_halteres</item>
+        <item>@string/peck_deck_fly</item>
+        <item>@string/desenvolvimento</item>
+        <item>@string/elevacao_lateral</item>
+        <item>@string/mergulho</item>
+        <item>@string/tricps_corda</item>
+    </string-array>
+    <string-array name="repeticao_b">
+        <item>@string/cinco_vezes</item>
+        <item>@string/quatro_vezes</item>
+        <item>@string/tres_vezes</item>
+        <item>@string/quatro_vezes</item>
+        <item>@string/tres_vezes</item>
+        <item>@string/quatro_vezes</item>
+        <item>@string/tres_vezes</item>
+    </string-array>
+    <string-array name="treino_c">
+        <item>@string/barra_fixa</item>
+        <item>@string/remada_baixa</item>
+        <item>@string/puxada_alta</item>
+        <item>@string/rosca_alternada</item>
+        <item>@string/rosca_direita</item>
+        <item>@string/abdominal_crunch</item>
+        <item>@string/abdominal_obliquo</item>
+    </string-array>
+    <string-array name="repeticao_c">
+        <item>@string/cinco_vezes</item>
+        <item>@string/quatro_vezes</item>
+        <item>@string/tres_vezes</item>
+        <item>@string/quatro_vezes</item>
+        <item>@string/tres_vezes</item>
+        <item>@string/tres_vezes</item>
+        <item>@string/tres_vezes</item>
+    </string-array>
     <string-array name="intervalo_universal">
         <item>@string/intervalo</item>
         <item>@string/intervalo</item>

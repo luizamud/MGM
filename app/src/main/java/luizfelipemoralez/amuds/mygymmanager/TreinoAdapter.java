@@ -48,9 +48,9 @@ public class TreinoAdapter extends RecyclerView.Adapter<TreinoAdapter.Holder> {
     public void onBindViewHolder(@NonNull Holder holder, int i) {
         Treino treinoItem = dados.get(i);
 
-        holder.id_treino.setText(treinoItem.getNomeTreino());
-        holder.id_repete.setText(treinoItem.getRepeteTreino());
-        holder.id_intervalo.setText(treinoItem.getEsperaTreino());
+        holder.id_treino.setText("Treino: "+treinoItem.getNomeTreino());
+        holder.id_repete.setText("Repetições: "+treinoItem.getRepeteTreino());
+        holder.id_intervalo.setText("Intervalo: "+treinoItem.getEsperaTreino());
     }
 
     @Override
