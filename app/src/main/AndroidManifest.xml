@@ -12,7 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Treino_C"></activity>
+        <activity android:name=".Cadastra_Autoria"></activity>
+        <activity android:name=".App_Autoria" />
+        <activity android:name=".Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Treino_C" />
         <activity android:name=".Treino_B" />
         <activity android:name=".Treino_A" />
         <activity android:name=".Treino" />

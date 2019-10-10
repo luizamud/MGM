@@ -4,6 +4,7 @@
     <string name="senha">Senha:</string>
     <string name="sobrenome">Sobrenome:</string>
     <string name="salvar_e_ir">Salvar e Ir</string>
+    <string name="salvar">Salvar</string>
     <string name="limpar">Limpar</string>
     <string name="termos">Termos:</string>
     <string name="lingua_materna">Lingua materna:</string>
@@ -55,6 +56,14 @@
     <string name="treino_a_desc">Treino A</string>
     <string name="treino_b_desc">Treino B</string>
     <string name="treino_c_desc">Treino C</string>
+    <!-- AUTORIA -->
+    <string name="curso">Curso:</string>
+    <string name="email">E-mail:</string>
+    <string name="utfpr">Universidade Tecnologica Federal do Paraná</string>
+    <string name="criador">Criador:</string>
+    <string name="formacao">Formação:</string>
+    <string name="label_bio">Biografia:</string>
+    <string name="id_text_biografia">Minha Biografia vai estar aqui aguarde!!</string>
     <!-- STRING ARRAYS -->
     <string-array name="treino_a">
         <item>@string/agachamento</item>

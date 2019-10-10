@@ -52,13 +52,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void limpaTela()    {
-        id_nome.setText("");
-        id_sobrenome.setText("");
-        id_senha.setText("");
-        id_termos.setChecked(false);
-        id_manager_lingua.clearCheck();
-        id_nome.requestFocus();
-        Toast.makeText(this, "Tela limpa", Toast.LENGTH_SHORT).show();
+        id_nome.setText("A");
+        id_sobrenome.setText("A");
+        id_senha.setText("A");
+        id_termos.setChecked(true);
+        Toast.makeText(this, "[DEV BUILD]", Toast.LENGTH_SHORT).show();
+        id_portugues.setChecked(true);
     }
 
     public boolean verificaTexto(){

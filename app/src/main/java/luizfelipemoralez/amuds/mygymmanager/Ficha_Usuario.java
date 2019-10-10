@@ -38,6 +38,7 @@ public class Ficha_Usuario extends AppCompatActivity{
     private String id_senha;
     private boolean id_termo;
     private String id_spinner_result;
+    private String genero;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,7 +76,7 @@ public class Ficha_Usuario extends AppCompatActivity{
     }
 
     private String reciveGenero(){
-        String genero = (String) id_spinner_genero.getSelectedItem().toString().trim();
+        genero = (String) id_spinner_genero.getSelectedItem().toString().trim();
         Toast.makeText(this, genero, Toast.LENGTH_LONG).show();
         return genero;
     }
@@ -137,14 +138,14 @@ public class Ficha_Usuario extends AppCompatActivity{
     }
 
     private void limpaTudo() {
-        id_torax.setText("0.0");
-        id_cintura.setText("0.0");
-        id_coxa.setText("0.0");
-        id_quadril.setText("0.0");
-        id_braco.setText("0.0");
-        id_altura.setText("0.0");
-        id_peso.setText("0.0");
-
+        id_torax.setText("0.10");
+        id_cintura.setText("01.0");
+        id_coxa.setText("0.10");
+        id_quadril.setText("10.0");
+        id_braco.setText("0.01");
+        id_altura.setText("0.01");
+        id_peso.setText("0.10");
+        genero = "Masculino";
     }
 
     public void sendUpdate(View view) {

@@ -3,31 +3,31 @@
 3    package="luizfelipemoralez.amuds.mygymmanager.test" >
 4
 5    <uses-sdk
-5-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:5:5-74
+5-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:5:5-74
 6        android:minSdkVersion="28"
-6-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:5:15-41
+6-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:5:15-41
 7        android:targetSdkVersion="29" />
-7-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:5:42-71
+7-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:5:42-71
 8
 9    <instrumentation
-9-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:11:5-15:86
+9-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:11:5-15:86
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:11:22-76
+10-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:11:22-76
 11        android:functionalTest="false"
-11-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:14:22-52
+11-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:14:22-52
 12        android:handleProfiling="false"
-12-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:13:22-53
+12-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:13:22-53
 13        android:label="Tests for luizfelipemoralez.amuds.mygymmanager"
-13-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:15:22-84
+13-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:15:22-84
 14        android:targetPackage="luizfelipemoralez.amuds.mygymmanager" />
-14-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:12:22-82
+14-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:12:22-82
 15
 16    <application android:debuggable="true" >
-16-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:7:5-9:19
-16-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:7:18-43
+16-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:7:5-9:19
+16-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:7:18-43
 17        <uses-library android:name="android.test.runner" />
-17-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:8:9-60
-17-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2452056268701544654.xml:8:23-57
+17-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:8:9-60
+17-->/home/scriptkid/Templates/MyGymManager/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1247045723643586724.xml:8:23-57
 18    </application>
 19
 20</manifest>

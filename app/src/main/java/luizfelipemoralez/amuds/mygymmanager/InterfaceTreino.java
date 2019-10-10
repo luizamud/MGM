@@ -17,6 +17,7 @@ public class InterfaceTreino extends AppCompatActivity {
     private String treino_a = "Treino A";
     private String treino_b = "Treino B";
     private String treino_c = "Treino C";
+    private String autoria = "Autoria";
 //40861180
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,10 @@ public class InterfaceTreino extends AppCompatActivity {
                         Intent intent3 = new Intent(getApplicationContext(),Treino_C.class);
                         startActivity(intent3);
                         break;
+                    case "Autoria":
+                        Intent intent4 = new Intent(getApplicationContext(),Cadastra_Autoria.class);
+                        startActivity(intent4);
+                        break;
 
                     default:
                         Toast.makeText(InterfaceTreino.this, "Por favor escolha um tipo de treino", Toast.LENGTH_LONG).show();
@@ -58,6 +63,7 @@ public class InterfaceTreino extends AppCompatActivity {
         treino.add(treino_a);
         treino.add(treino_b);
         treino.add(treino_c);
+        treino.add(autoria);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,treino);
         id_lista_treino.setAdapter(adapter);
     }
