@@ -2,6 +2,8 @@ package luizfelipemoralez.amuds.mygymmanager.Controller;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,6 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import luizfelipemoralez.amuds.mygymmanager.R;
@@ -38,7 +41,7 @@ public class Cadastro_Treino extends AppCompatActivity {
         id_nome = findViewById(R.id.id_nome);
         id_qtd = findViewById(R.id.id_qtd);
         id_intervalo = findViewById(R.id.id_intervalo);
-        id_criar_treino = findViewById(R.id.id_criar_treino);
+        id_criar_treino = findViewById(R.id.id_adicionar);
         id_list_traning = findViewById(R.id.id_list_traning);
         id_A = findViewById(R.id.id_A);
         id_B = findViewById(R.id.id_B);
@@ -92,7 +95,39 @@ public class Cadastro_Treino extends AppCompatActivity {
         finish();
     }
 
-    public void sendTraining(View view) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_cadastro, menu);
+        return true;
+    }
+
+    public void limpaTela() {
+        id_nome.setText("");
+        id_qtd.setText("");
+        id_intervalo.setText("");
+        id_list_traning.clearCheck();
+        Toast.makeText(this, R.string.limpar_tela, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.id_adicionar:
+                sendTraining(item);
+                return true;
+            case R.id.id_clean:
+                sendClear(item);
+                return true;
+            default:
+                return onOptionsItemSelected(item);
+        }
+    }
+
+    public void sendTraining(MenuItem item) {
         createObejct();
+    }
+
+    public void sendClear(MenuItem item) {
+        limpaTela();
     }
 }

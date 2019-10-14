@@ -72,10 +72,10 @@ public class Ficha_Usuario extends AppCompatActivity {
 
     private void startSpinner() {
         ArrayList<String> genero = new ArrayList<>();
-        genero.add("Masculino");
-        genero.add("Feminino");
-        genero.add("Não Binario");
-        genero.add("Indefinido");
+        genero.add(getString(R.string.masculino));
+        genero.add(getString(R.string.feminino));
+        genero.add(getString(R.string.nao_binario));
+        genero.add(getString(R.string.indefinido));
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, genero);
         id_spinner_genero.setAdapter(adapter);
     }

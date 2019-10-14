@@ -2,10 +2,13 @@ package luizfelipemoralez.amuds.mygymmanager.Controller;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -48,7 +51,6 @@ public class Home extends AppCompatActivity {
                 String nome = bundle.getString("treino_nome");
                 String qtd = bundle.getString("treino_qtd");
                 String intervalo = bundle.getString("treino_intervalo");
-                Toast.makeText(this, "Cheguei Aqui", Toast.LENGTH_SHORT).show();
                 treino.add(new Treino(nome, qtd, intervalo, tipo));
                 homeAdapter.notifyDataSetChanged();
                 homeAdapter = new HomeAdapter(treino);
@@ -60,15 +62,37 @@ public class Home extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    public void sendRegister(View view) {
-        Intent intent = new Intent(this, Cadastro_Treino.class);
-        startActivityForResult(intent, RESULT_FIRST_USER);
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_home, menu);
+        return true;
     }
 
-    public void sendAbout(View view) {
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.id_adicionar:
+                sendRegister(item);
+                return true;
+            case R.id.id_sobre:
+                sendAbout(item);
+                return true;
+            default:
+                return onOptionsItemSelected(item);
+        }
+    }
+
+    public void sendAbout(MenuItem item) {
         Intent intent = new Intent(getApplicationContext(), App_Autoria.class);
         startActivity(intent);
     }
 
+    public void sendRegister(MenuItem item) {
+        Intent intent = new Intent(this, Cadastro_Treino.class);
+        startActivityForResult(intent, RESULT_FIRST_USER);
+    }
+
+    public void short_press() {
+
+    }
 }

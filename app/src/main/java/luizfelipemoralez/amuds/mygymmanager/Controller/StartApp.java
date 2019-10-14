@@ -2,6 +2,7 @@ package luizfelipemoralez.amuds.mygymmanager.Controller;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -74,16 +75,16 @@ public class StartApp extends AppCompatActivity {
                 if (!senha.equalsIgnoreCase("")) {
                     bool = true;
                 } else {
-                    Toast.makeText(this, "Senha não pode ser deixado em branco", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.senha_em_branco, Toast.LENGTH_SHORT).show();
                 }
 
             } else {
-                Toast.makeText(this, "Sobrenome não pode ser deixado em branco", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.sobrenome_em_branco, Toast.LENGTH_SHORT).show();
             }
 
 
         } else {
-            Toast.makeText(this, "Nome não pode ser deixado em branco", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.nome_em_branco, Toast.LENGTH_SHORT).show();
         }
 
         return bool;
@@ -119,7 +120,7 @@ public class StartApp extends AppCompatActivity {
                 bool = true;
                 break;
             default:
-                Toast.makeText(this, "Selecione uma lingua materna", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.selecione_lingua_materna, Toast.LENGTH_SHORT).show();
                 msg = null;
                 break;
         }
@@ -152,5 +153,6 @@ public class StartApp extends AppCompatActivity {
     public void sendUser(View view) {
         verificaTudo();
     }
+
 }
 

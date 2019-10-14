@@ -1,10 +1,14 @@
 package luizfelipemoralez.amuds.mygymmanager.Controller;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import luizfelipemoralez.amuds.mygymmanager.R;
@@ -60,9 +64,30 @@ public class App_Autoria extends AppCompatActivity {
         label_biografia.setTextColor(getResources().getColor(R.color.accent_utfpr_color));
     }
 
+    public void sair_autoria() {
+        finish();
+    }
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
         finish();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_autoria, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.id_voltar:
+                sair_autoria();
+                return true;
+            default:
+                return onOptionsItemSelected(item);
+        }
     }
 }
