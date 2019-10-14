@@ -21,22 +21,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Cadastra_Autoria" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.App_Autoria" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Main2Activity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino_C" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino_B" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino_A" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Treino" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.InterfaceTreino" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Ficha_Usuario" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.MainActivity" >
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.StartApp" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.Cadastro_Treino" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.App_Autoria" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Model.Treino" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.Ficha_Usuario" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.Home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Gym Manager</string>
-    <string name="nome">Nome:</string>
+    <string name="nome">Nome: </string>
     <string name="senha">Senha:</string>
     <string name="sobrenome">Sobrenome:</string>
     <string name="salvar_e_ir">Salvar e Ir</string>
@@ -21,7 +21,6 @@
     <string name="peso">Medida do Peso:</string>
     <string name="atualizar_cadastro">Atualizar Cadastro</string>
     <string name="qtd_repete">Quantidade de repetições</string>
-    <string name="descanco">Descanço:</string>
     <!-- TREINO A -->
     <string name="agachamento">Agachamento</string>
     <string name="leg_press">Leg Press</string>
@@ -57,75 +56,30 @@
     <string name="treino_b_desc">Treino B</string>
     <string name="treino_c_desc">Treino C</string>
     <!-- AUTORIA -->
-    <string name="curso">Curso:</string>
-    <string name="email">E-mail:</string>
+    <string name="curso">Curso: </string>
+    <string name="email">E-mail: </string>
     <string name="utfpr">Universidade Tecnologica Federal do Paraná</string>
     <string name="criador">Criador:</string>
-    <string name="formacao">Formação:</string>
-    <string name="label_bio">Biografia:</string>
+    <string name="formacao">Formação: </string>
+    <string name="label_bio">Biografia: </string>
     <string name="id_text_biografia">Minha Biografia vai estar aqui aguarde!!</string>
-    <!-- STRING ARRAYS -->
-    <string-array name="treino_a">
-        <item>@string/agachamento</item>
-        <item>@string/leg_press</item>
-        <item>@string/extensora</item>
-        <item>@string/stiff</item>
-        <item>@string/mesa_flexora</item>
-        <item>@string/extensora_lombar</item>
-        <item>@string/panturrilha</item>
-    </string-array>
-    <string-array name="repeticao_a">
-        <item>@string/cinco_vezes</item>
-        <item>@string/quatro_vezes</item>
-        <item>@string/tres_vezes</item>
-        <item>@string/quatro_vezes</item>
-        <item>@string/tres_vezes</item>
-        <item>@string/tres_vezes</item>
-        <item>@string/quatro_vezes</item>
-    </string-array>
-    <string-array name="treino_b">
-        <item>@string/supino</item>
-        <item>@string/supino_halteres</item>
-        <item>@string/peck_deck_fly</item>
-        <item>@string/desenvolvimento</item>
-        <item>@string/elevacao_lateral</item>
-        <item>@string/mergulho</item>
-        <item>@string/tricps_corda</item>
-    </string-array>
-    <string-array name="repeticao_b">
-        <item>@string/cinco_vezes</item>
-        <item>@string/quatro_vezes</item>
-        <item>@string/tres_vezes</item>
-        <item>@string/quatro_vezes</item>
-        <item>@string/tres_vezes</item>
-        <item>@string/quatro_vezes</item>
-        <item>@string/tres_vezes</item>
-    </string-array>
-    <string-array name="treino_c">
-        <item>@string/barra_fixa</item>
-        <item>@string/remada_baixa</item>
-        <item>@string/puxada_alta</item>
-        <item>@string/rosca_alternada</item>
-        <item>@string/rosca_direita</item>
-        <item>@string/abdominal_crunch</item>
-        <item>@string/abdominal_obliquo</item>
-    </string-array>
-    <string-array name="repeticao_c">
-        <item>@string/cinco_vezes</item>
-        <item>@string/quatro_vezes</item>
-        <item>@string/tres_vezes</item>
-        <item>@string/quatro_vezes</item>
-        <item>@string/tres_vezes</item>
-        <item>@string/tres_vezes</item>
-        <item>@string/tres_vezes</item>
-    </string-array>
-    <string-array name="intervalo_universal">
-        <item>@string/intervalo</item>
-        <item>@string/intervalo</item>
-        <item>@string/intervalo</item>
-        <item>@string/intervalo</item>
-        <item>@string/intervalo</item>
-        <item>@string/intervalo</item>
-        <item>@string/intervalo</item>
-    </string-array>
+    <!-- Owner Information-->
+    <string name="owner_name">Luiz Felipe Moralez Amud</string>
+    <string name="owner_job">Análise e Desenvolvimento de Sistemas</string>
+    <string name="owner_email">luizamud@alunos.utfpr.edu.br</string>
+    <string name="owner_bio">O Software está sendo desenvovido para que seja um personal trainer completo e super preciso em seus exercicios</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="outras">Outras</string>
+    <string name="nome_do_treino">Nome do Treino: </string>
+    <string name="quantidade_de_repeticoes">Quantidade de Repetições:</string>
+    <string name="intervalo_segundos">Digte o intervalo desejado(Segundos):</string>
+    <string name="criar_treino">Criar Treino</string>
+
+    <string name="cadastrar">Cadastrar</string>
+    <string name="sobre">Sobre</string>
+    <string name="erro_desconhecido">Erro Desconhecido</string>
+    <string name="tipo_de_treino">Tipo de Treino:</string>
+    <string name="intervalo_treino">Intervalo: </string>
+    <string name="erro_cadastrar_treino">O cadastro do treino foi cancelado</string>
+
 </resources>
