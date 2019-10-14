@@ -53,7 +53,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.Holder> {
         Treino treinoItem = dados.get(i);
         holder.id_tipo.setText("Tipo de Treino: " + treinoItem.getTipoTreino());
         holder.id_treino.setText("Nome do Treino: " + treinoItem.getNomeTreino());
-        holder.id_repete.setText("Repetições do Treino: " + treinoItem.getRepeteTreino());
+        holder.id_repete.setText("Quantidade de Repetições: " + treinoItem.getRepeteTreino());
         holder.id_intervalo.setText("Intervalo do Treino: " + treinoItem.getEsperaTreino() + " Segundos");
     }
 
