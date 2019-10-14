@@ -97,20 +97,4 @@
             android:text="@string/treino_c_desc" />
     </RadioGroup>
 
-    <Button
-        android:id="@+id/id_criar_treino"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="218dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="49dp"
-        android:gravity="center"
-        android:onClick="sendTraining"
-        android:text="@string/criar_treino"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_intervalo" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/id_adicionar"
+        android:icon="@drawable/save"
+        android:onClick="sendTraining"
+        android:title="@string/salvar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/id_clean"
+        android:icon="@drawable/clean"
+        android:onClick="sendClear"
+        android:title="@string/limpar"
+        app:showAsAction="ifRoom" />
+</menu>

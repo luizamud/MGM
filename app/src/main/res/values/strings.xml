@@ -45,12 +45,6 @@
     <string name="rosca_direita">Rosca direta no cabo</string>
     <string name="abdominal_crunch">Abdominal crunch máquina</string>
     <string name="abdominal_obliquo">Abdominal oblíquo máquina</string>
-    <!-- Repetição -->
-    <string name="cinco_vezes">5 X 10</string>
-    <string name="quatro_vezes">4 X 10</string>
-    <string name="tres_vezes">3 X 10</string>
-    <!-- INTERVALO -->
-    <string name="intervalo"> 45`` á  1`</string>
     <!-- TIPOS DE TREINOS -->
     <string name="treino_a_desc">Treino A</string>
     <string name="treino_b_desc">Treino B</string>
@@ -73,6 +67,7 @@
     <string name="nome_do_treino">Nome do Treino: </string>
     <string name="quantidade_de_repeticoes">Quantidade de Repetições:</string>
     <string name="intervalo_segundos">Digte o intervalo desejado(Segundos):</string>
+    <string name="intervalo">Intervalo do Treino:</string>
     <string name="criar_treino">Criar Treino</string>
 
     <string name="cadastrar">Cadastrar</string>
@@ -81,5 +76,20 @@
     <string name="tipo_de_treino">Tipo de Treino:</string>
     <string name="intervalo_treino">Intervalo: </string>
     <string name="erro_cadastrar_treino">O cadastro do treino foi cancelado</string>
+    <string name="limpar_tela">[LIMPEZA DE TELA]</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="nao_binario">Não Binario</string>
+    <string name="indefinido">Indefinido</string>
+    <string name="senha_em_branco">Senha não pode ser deixado em branco</string>
+    <string name="sobrenome_em_branco">Sobrenome não pode ser deixado em branco</string>
+    <string name="nome_em_branco">Nome não pode ser deixado em branco</string>
+    <string name="selecione_lingua_materna">Selecione uma lingua materna</string>
+    <string name="tipo_treino">Tipo de Treino:</string>
+    <string name="nome_treino">Nome do Treino:</string>
+    <string name="qtd_treino">Repetições do Treino:</string>
+    <string name="alterar_treino">Alterar Treino</string>
+    <string name="excluir_treino">Excluir Treino</string>
+    <string name="voltar">Voltar</string>
 
 </resources>
