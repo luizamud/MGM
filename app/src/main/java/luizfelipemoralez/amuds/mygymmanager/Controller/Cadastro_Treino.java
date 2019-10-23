@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import luizfelipemoralez.amuds.mygymmanager.Model.Treino;
 import luizfelipemoralez.amuds.mygymmanager.R;
 
 public class Cadastro_Treino extends AppCompatActivity {
@@ -30,6 +31,9 @@ public class Cadastro_Treino extends AppCompatActivity {
     private RadioButton id_B;
     private RadioButton id_C;
     private String responsive;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
