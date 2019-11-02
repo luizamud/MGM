@@ -1,6 +1,8 @@
 package luizfelipemoralez.amuds.mygymmanager.Controller;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -17,6 +19,8 @@ import java.util.ArrayList;
 import luizfelipemoralez.amuds.mygymmanager.R;
 
 public class Ficha_Usuario extends AppCompatActivity {
+    private static final String USER_INFO ="br.edu.utfpr.alexandrefeitosa.sharedpreferences.USER_INFO";
+    private static final String FIRST_USER = "FIRST_USER";
     private Intent intent;
     private Bundle bundle;
     private TextView id_label_torax;
@@ -43,6 +47,7 @@ public class Ficha_Usuario extends AppCompatActivity {
     private boolean id_termo;
     private String id_spinner_result;
     private String genero;
+    private Intent intentx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +73,7 @@ public class Ficha_Usuario extends AppCompatActivity {
         id_altura = findViewById(R.id.id_altura);
         id_peso = findViewById(R.id.id_peso);
         startSpinner();
+        intentx = getIntent();
     }
 
     private void startSpinner() {
@@ -132,7 +138,8 @@ public class Ficha_Usuario extends AppCompatActivity {
     private void verficaTudo() {
         if (!reciveGenero().equalsIgnoreCase("")) {
             if (verificaTexto()) {
-                Intent intent = new Intent(this, Home.class);
+               writer();
+                Intent intent = new Intent(getApplicationContext(),Home.class);
                 startActivity(intent);
             } else {
                 limpaTudo();
@@ -152,7 +159,33 @@ public class Ficha_Usuario extends AppCompatActivity {
         id_peso.setText("0.0");
         genero = "";
     }
+    private void writer(){
+                Bundle bundle = intentx.getExtras();
+            SharedPreferences shared = getSharedPreferences(USER_INFO,
+                    Context.MODE_PRIVATE);
 
+            SharedPreferences.Editor editor = shared.edit();
+            if (bundle != null){
+                editor.putBoolean(FIRST_USER, true);
+                editor.putString("id_nome",bundle.getString("id_nome"));
+                editor.putString("id_sobrenome",bundle.getString("id_sobrenome"));
+                editor.putString("id_senha",bundle.getString("id_senha"));
+                editor.putString("id_lingua",bundle.getString("id_lingua"));
+                editor.putString("id_termo",bundle.getString("id_termo"));
+                editor.putString("id_torax",id_torax.getText().toString());
+                editor.putString("id_cintura",id_cintura.getText().toString());
+                editor.putString("id_coxa",id_coxa.getText().toString());
+                editor.putString("id_quadril",id_quadril.getText().toString());
+                editor.putString("id_braco",id_braco.getText().toString());
+                editor.putString("id_altura",id_altura.getText().toString());
+                editor.putString("id_peso",id_peso.getText().toString());
+                editor.apply();
+                Toast.makeText(this, "Preferencia Salva", Toast.LENGTH_LONG).show();
+
+            }
+
+
+    }
     public void sendClear(View view) {
         limpaTudo();
     }

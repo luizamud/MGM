@@ -22,12 +22,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.StartApp" />
         <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.Cadastro_Treino" />
         <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.App_Autoria" />
         <activity android:name="luizfelipemoralez.amuds.mygymmanager.Model.Treino" />
         <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.Ficha_Usuario" />
-        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.Home" >
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.Home" />
+        <activity android:name="luizfelipemoralez.amuds.mygymmanager.Controller.StartApp" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

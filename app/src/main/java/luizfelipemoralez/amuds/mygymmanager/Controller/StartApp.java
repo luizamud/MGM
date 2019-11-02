@@ -1,6 +1,8 @@
 package luizfelipemoralez.amuds.mygymmanager.Controller;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +19,9 @@ import luizfelipemoralez.amuds.mygymmanager.R;
 
 public class StartApp extends AppCompatActivity {
 
+    private static final String USER_INFO ="br.edu.utfpr.alexandrefeitosa.sharedpreferences.USER_INFO";
+    private static final String FIRST_USER = "FIRST_USER";
+    private boolean boll;
     private TextView id_label_nome;
     private TextView id_label_sobrenome;
     private TextView id_label_senha;
@@ -32,10 +37,12 @@ public class StartApp extends AppCompatActivity {
     private RadioButton id_espanhol;
     private String id_linguagem;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        reader();
         id_nome = findViewById(R.id.id_nome);
         id_sobrenome = findViewById(R.id.id_sobrenome);
         id_senha = findViewById(R.id.id_senha);
@@ -51,6 +58,15 @@ public class StartApp extends AppCompatActivity {
         id_label_lingua = findViewById(R.id.id_label_lingua);
 
     }
+    private void reader(){
+        SharedPreferences shared = getSharedPreferences(USER_INFO,
+                Context.MODE_PRIVATE);
+        if (shared.contains(FIRST_USER)){
+            Intent intent = new Intent(getApplicationContext(),Home.class);
+            startActivity(intent);
+        }
+
+    }
 
     public void sendClear(View view) {
         limpaTela();
@@ -63,6 +79,8 @@ public class StartApp extends AppCompatActivity {
         id_termos.setChecked(false);
         id_manager_lingua.clearCheck();
     }
+
+
 
     public boolean verificaTexto() {
         String nome = id_nome.getText().toString().trim();

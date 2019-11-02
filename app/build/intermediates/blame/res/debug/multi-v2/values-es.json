@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/home/devscript/Desktop/MyGymManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml",
+            "outputFile": "/home/script/Projetos/[ANDROID]/MyGymManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml",
             "map": [
                 {
-                    "source": "/home/devscript/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/values-es/values-es.xml",
+                    "source": "/home/script/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/res/values-es/values-es.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "54",
+                        "startColumns": "4",
+                        "startOffsets": "5380",
+                        "endColumns": "100",
+                        "endOffsets": "5476"
+                    }
+                },
+                {
+                    "source": "/home/script/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/devscript/.gradle/caches/transforms-2/files-2.1/45d3ae111e5f4cc2e2a23ef7d2d728cc/mediarouter-1.1.0/res/values-es/values-es.xml",
+                    "source": "/home/script/.gradle/caches/transforms-2/files-2.1/45d3ae111e5f4cc2e2a23ef7d2d728cc/mediarouter-1.1.0/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,23 +52,6 @@
                         "startOffsets": "2842,2946,3056,3168,3284,3410,3511,3595,3696,3801,3898,3993,4088,4181,4301,4423,4508,4596,4681,4780,4895,5001,5112,5199",
                         "endColumns": "103,109,111,115,125,100,83,100,104,96,94,94,92,119,121,84,87,84,98,114,105,110,86,98",
                         "endOffsets": "2941,3051,3163,3279,3405,3506,3590,3691,3796,3893,3988,4083,4176,4296,4418,4503,4591,4676,4775,4890,4996,5107,5194,5293"
-                    }
-                },
-                {
-                    "source": "/home/devscript/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/res/values-es/values-es.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "54",
-                        "startColumns": "4",
-                        "startOffsets": "5380",
-                        "endColumns": "100",
-                        "endOffsets": "5476"
                     }
                 }
             ]
