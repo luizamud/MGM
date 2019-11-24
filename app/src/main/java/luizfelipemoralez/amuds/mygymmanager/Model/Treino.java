@@ -7,6 +7,7 @@ public class Treino {
     private String tipoTreino;
 
     public Treino(String nomeTreino, String repeteTreino, String esperaTreino, String tipoTreino) {
+
         this.nomeTreino = nomeTreino;
         this.repeteTreino = repeteTreino;
         this.esperaTreino = esperaTreino;
