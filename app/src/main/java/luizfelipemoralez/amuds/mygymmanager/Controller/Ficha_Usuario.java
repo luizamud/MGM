@@ -4,25 +4,36 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.ActionBarContainer;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
 
 import luizfelipemoralez.amuds.mygymmanager.R;
 
 public class Ficha_Usuario extends AppCompatActivity {
-    private static final String USER_INFO ="br.edu.utfpr.alexandrefeitosa.sharedpreferences.USER_INFO";
+    private static final String USER_INFO = "luizfelipemoralez.amuds.mygymmanager.sharedpreferences.USER_INFO";
     private static final String FIRST_USER = "FIRST_USER";
-    private Intent intent;
-    private Bundle bundle;
+
     private TextView id_label_torax;
     private TextView id_label_genero;
     private TextView id_label_cintura;
@@ -31,7 +42,12 @@ public class Ficha_Usuario extends AppCompatActivity {
     private TextView id_label_coxa;
     private TextView id_label_altura;
     private TextView id_label_peso;
+    private TextView id_label_nome;
+    private TextView id_label_termo;
+    private TextView id_label_lingua_materna;
+
     private Spinner id_spinner_genero;
+    private EditText id_nome;
     private EditText id_torax;
     private EditText id_cintura;
     private EditText id_quadril;
@@ -39,32 +55,36 @@ public class Ficha_Usuario extends AppCompatActivity {
     private EditText id_coxa;
     private EditText id_altura;
     private EditText id_peso;
-    private Button id_atualizar;
-    private Button id_limpar;
-    private String id_nome;
-    private String id_sobrenome;
-    private String id_senha;
-    private boolean id_termo;
-    private String id_spinner_result;
     private String genero;
-    private Intent intentx;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ficha_usuario);
 
-        id_label_genero = findViewById(R.id.id_label_genero);
-        id_label_torax = findViewById(R.id.id_label_torax);
-        id_label_cintura = findViewById(R.id.id_label_cintura);
-        id_label_coxa = findViewById(R.id.id_label_coxa);
-        id_label_quadril = findViewById(R.id.id_label_quadril);
-        id_label_braco = findViewById(R.id.id_label_braco);
-        id_label_altura = findViewById(R.id.id_label_altura);
-        id_label_peso = findViewById(R.id.id_label_peso);
-        id_atualizar = findViewById(R.id.id_atualizar);
-        id_limpar = findViewById(R.id.id_limpar);
-        id_spinner_genero = findViewById(R.id.id_spinner_genero);
+        SharedPreferences shared = getApplicationContext().getSharedPreferences(USER_INFO,
+                Context.MODE_PRIVATE);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null){
+            actionBar.setDisplayHomeAsUpEnabled(false);
+        }
+
+        id_label_nome = findViewById(R.id.label_nome);
+        id_label_genero = findViewById(R.id.label_genero);
+        id_label_torax = findViewById(R.id.label_torax);
+        id_label_cintura = findViewById(R.id.label_cintura);
+        id_label_coxa = findViewById(R.id.label_coxa);
+        id_label_quadril = findViewById(R.id.label_quadril);
+        id_label_braco = findViewById(R.id.label_braco);
+        id_label_altura = findViewById(R.id.label_altura);
+        id_label_peso = findViewById(R.id.label_peso);
+
+
+
+        id_spinner_genero = findViewById(R.id.id_genero);
+        id_nome = findViewById(R.id.id_nome);
         id_torax = findViewById(R.id.id_torax);
         id_cintura = findViewById(R.id.id_cintura);
         id_coxa = findViewById(R.id.id_coxa);
@@ -72,8 +92,13 @@ public class Ficha_Usuario extends AppCompatActivity {
         id_braco = findViewById(R.id.id_braco);
         id_altura = findViewById(R.id.id_altura);
         id_peso = findViewById(R.id.id_peso);
+
         startSpinner();
-        intentx = getIntent();
+        if(shared != null){
+         Preferences(shared);
+        }
+
+
     }
 
     private void startSpinner() {
@@ -92,64 +117,15 @@ public class Ficha_Usuario extends AppCompatActivity {
         return genero;
     }
 
-    private boolean verificaTexto() {
-        boolean boll = false;
-        String aviso = "Este campo não pode ficar em branco";
-        if (!id_torax.getText().toString().equalsIgnoreCase("0.0")) {
-            if (!id_cintura.getText().toString().equalsIgnoreCase("0.0")) {
-                if (!id_coxa.getText().toString().equalsIgnoreCase("0.0")) {
-                    if (!id_quadril.getText().toString().equalsIgnoreCase("0.0")) {
-                        if (!id_braco.getText().toString().equalsIgnoreCase("0.0")) {
-                            if (!id_altura.getText().toString().equalsIgnoreCase("0.0")) {
-                                if (!id_peso.getText().toString().equalsIgnoreCase("0.0")) {
-                                    boll = true;
-                                } else {
-                                    id_peso.requestFocus();
-                                    Toast.makeText(this, aviso, Toast.LENGTH_SHORT).show();
-                                }
-                            } else {
-                                id_altura.requestFocus();
-                                Toast.makeText(this, aviso, Toast.LENGTH_SHORT).show();
-                            }
-                        } else {
-                            id_braco.requestFocus();
-                            Toast.makeText(this, aviso, Toast.LENGTH_SHORT).show();
-                        }
-                    } else {
-                        id_quadril.requestFocus();
-                        Toast.makeText(this, aviso, Toast.LENGTH_SHORT).show();
-                    }
-                } else {
-                    id_coxa.requestFocus();
-                    Toast.makeText(this, aviso, Toast.LENGTH_SHORT).show();
-                }
-            } else {
-                id_cintura.requestFocus();
-                Toast.makeText(this, aviso, Toast.LENGTH_SHORT).show();
-            }
-        } else {
-            id_torax.requestFocus();
-            Toast.makeText(this, aviso, Toast.LENGTH_SHORT).show();
-
-        }
-        return boll;
-    }
-
     private void verficaTudo() {
-        if (!reciveGenero().equalsIgnoreCase("")) {
-            if (verificaTexto()) {
-               writer();
-                Intent intent = new Intent(getApplicationContext(),Home.class);
-                startActivity(intent);
-            } else {
-                limpaTudo();
-            }
-        } else {
-            startSpinner();
-        }
+        writer();
+        Intent intent = new Intent(getApplicationContext(), Home.class);
+        startActivity(intent);
+        startSpinner();
     }
 
     private void limpaTudo() {
+        id_nome.setText("");
         id_torax.setText("0.0");
         id_cintura.setText("0.0");
         id_coxa.setText("0.0");
@@ -157,40 +133,82 @@ public class Ficha_Usuario extends AppCompatActivity {
         id_braco.setText("0.0");
         id_altura.setText("0.0");
         id_peso.setText("0.0");
-        genero = "";
-    }
-    private void writer(){
-                Bundle bundle = intentx.getExtras();
-            SharedPreferences shared = getSharedPreferences(USER_INFO,
-                    Context.MODE_PRIVATE);
-
-            SharedPreferences.Editor editor = shared.edit();
-            if (bundle != null){
-                editor.putBoolean(FIRST_USER, true);
-                editor.putString("id_nome",bundle.getString("id_nome"));
-                editor.putString("id_sobrenome",bundle.getString("id_sobrenome"));
-                editor.putString("id_senha",bundle.getString("id_senha"));
-                editor.putString("id_lingua",bundle.getString("id_lingua"));
-                editor.putString("id_termo",bundle.getString("id_termo"));
-                editor.putString("id_torax",id_torax.getText().toString());
-                editor.putString("id_cintura",id_cintura.getText().toString());
-                editor.putString("id_coxa",id_coxa.getText().toString());
-                editor.putString("id_quadril",id_quadril.getText().toString());
-                editor.putString("id_braco",id_braco.getText().toString());
-                editor.putString("id_altura",id_altura.getText().toString());
-                editor.putString("id_peso",id_peso.getText().toString());
-                editor.apply();
-                Toast.makeText(this, "Preferencia Salva", Toast.LENGTH_LONG).show();
-
-            }
-
 
     }
-    public void sendClear(View view) {
-        limpaTudo();
+
+    private void writer() {
+        genero = reciveGenero();
+        String nome = id_nome.getText().toString();
+        String peso = id_peso.getText().toString();
+        String altura = id_altura.getText().toString();
+        String torax = id_torax.getText().toString();
+        String cintura = id_cintura.getText().toString();
+        String coxa = id_coxa.getText().toString();
+        String quadril = id_quadril.getText().toString();
+        String braco = id_braco.getText().toString();
+
+
+        SharedPreferences shared = getSharedPreferences(USER_INFO,
+                Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = shared.edit();
+
+        editor.putBoolean(FIRST_USER, true);
+        editor.putString("id_nome", nome);
+        editor.putString("id_genero", genero);
+        editor.putString("id_torax", torax);
+        editor.putString("id_cintura", cintura);
+        editor.putString("id_coxa", coxa);
+        editor.putString("id_quadril", quadril);
+        editor.putString("id_braco", braco);
+        editor.putString("id_altura", altura);
+        editor.putString("id_peso", peso);
+        editor.apply();
+        Toast.makeText(this, "Preferencia Salva", Toast.LENGTH_LONG).show();
+
+    }
+    private void Preferences(SharedPreferences shared){
+        String nome = shared.getString("id_nome", "");
+        String torax = shared.getString("id_torax", "");
+        String cintura = shared.getString("id_cintura", "");
+        String coxa = shared.getString("id_coxa", "");
+        String quadril = shared.getString("id_quadril", "");
+        String braco = shared.getString("id_braco", "");
+        String altura = shared.getString("id_altura", "");
+        String peso = shared.getString("id_peso", "");
+
+
+
+
+        id_nome.setText(nome);
+        id_torax.setText(torax);
+        id_cintura.setText(cintura);
+        id_coxa.setText(coxa);
+        id_quadril.setText(quadril);
+        id_braco.setText(braco);
+        id_altura.setText(altura);
+        id_peso.setText(peso);
+
     }
 
-    public void sendUpdate(View view) {
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+       getMenuInflater().inflate(R.menu.menu_salvar,menu);
+       return  true;
+    }
+
+    public void sendRegister(MenuItem item) {
+        writer();
         verficaTudo();
     }
+
+    public void sendClear(MenuItem item) {
+        limpaTudo();
+        Toast.makeText(this, "LIMPOU", Toast.LENGTH_SHORT).show();
+
+    }
+
 }

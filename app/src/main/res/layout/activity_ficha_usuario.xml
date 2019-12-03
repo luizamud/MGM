@@ -8,230 +8,210 @@
 
     <EditText
         android:id="@+id/id_torax"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="166dp"
+        android:layout_marginTop="16dp"
         android:autoText="true"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_label_torax" />
+        app:layout_constraintTop_toBottomOf="@+id/label_torax" />
 
     <EditText
         android:id="@+id/id_cintura"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="166dp"
+        android:layout_marginTop="16dp"
         android:autoText="true"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_label_cintura" />
+        app:layout_constraintTop_toBottomOf="@+id/label_cintura" />
 
     <EditText
         android:id="@+id/id_quadril"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="166dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:autoText="true"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_label_quadril" />
+        app:layout_constraintTop_toBottomOf="@+id/label_quadril" />
 
     <EditText
         android:id="@+id/id_coxa"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="166dp"
+        android:layout_marginTop="16dp"
         android:autoText="true"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_label_coxa" />
+        app:layout_constraintTop_toBottomOf="@+id/label_coxa" />
 
     <TextView
-        android:id="@+id/id_label_cintura"
+        android:id="@+id/label_cintura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="261dp"
+        android:layout_marginTop="8dp"
         android:text="@string/cintura"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_quadril" />
-
-    <TextView
-        android:id="@+id/id_label_quadril"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="261dp"
-        android:text="@string/qualdril"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_coxa" />
 
     <TextView
-        android:id="@+id/id_label_braco"
+        android:id="@+id/label_quadril"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="269dp"
-        android:text="@string/braco"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="69dp"
+        android:text="@string/qualdril"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_altura" />
 
     <TextView
-        android:id="@+id/id_label_genero"
+        android:id="@+id/label_braco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="77dp"
+        android:text="@string/braco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_quadril" />
+
+    <TextView
+        android:id="@+id/label_genero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="240dp"
         android:text="@string/genero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/id_nome" />
 
     <Spinner
-        android:id="@+id/id_spinner_genero"
-        android:layout_width="196dp"
-        android:layout_height="23dp"
+        android:id="@+id/id_genero"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="183dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_label_genero" />
+        app:layout_constraintTop_toBottomOf="@+id/label_genero" />
 
     <TextView
-        android:id="@+id/id_label_torax"
+        android:id="@+id/label_torax"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="270dp"
+        android:layout_marginTop="8dp"
         android:text="@string/torax"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_cintura" />
 
     <TextView
-        android:id="@+id/id_label_peso"
+        android:id="@+id/label_peso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="274dp"
+        android:layout_marginTop="8dp"
         android:text="@string/peso"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_spinner_genero" />
+        app:layout_constraintTop_toBottomOf="@+id/id_genero" />
 
     <TextView
-        android:id="@+id/id_label_altura"
+        android:id="@+id/label_altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/altura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_genero" />
+
+    <TextView
+        android:id="@+id/label_coxa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="269dp"
-        android:text="@string/altura"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="@string/coxa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_peso" />
 
-    <TextView
-        android:id="@+id/id_label_coxa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="274dp"
-        android:text="@string/coxa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_braco" />
-
-    <Button
-        android:id="@+id/id_atualizar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="16dp"
-        android:onClick="sendUpdate"
-        android:text="@string/atualizar_cadastro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_torax" />
-
-    <Button
-        android:id="@+id/id_limpar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        android:onClick="sendClear"
-        android:text="@string/limpar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <EditText
         android:id="@+id/id_peso"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="166dp"
+        android:layout_marginTop="16dp"
         android:autoText="true"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_label_peso" />
+        app:layout_constraintTop_toBottomOf="@+id/label_peso" />
 
     <EditText
         android:id="@+id/id_altura"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="166dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:autoText="true"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_label_altura" />
+        app:layout_constraintTop_toBottomOf="@+id/label_altura" />
 
     <EditText
         android:id="@+id/id_braco"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="166dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:autoText="true"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_braco" />
+
+    <TextView
+        android:id="@+id/label_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nome"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_label_braco" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_nome"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_nome" />
+
+    <RadioGroup
+        android:id="@+id/id_list_lingua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="481dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

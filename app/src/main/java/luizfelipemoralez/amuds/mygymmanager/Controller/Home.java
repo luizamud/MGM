@@ -177,4 +177,8 @@ public class Home extends AppCompatActivity {
     }
 
 
+    public void sendPreferences(MenuItem item) {
+        Intent intent = new Intent(this,Ficha_Usuario.class);
+        startActivity(intent);
+    }
 }

@@ -1,7 +1,10 @@
-#Sun Nov 24 17:14:58 BRST 2019
-base.0=/home/devscript/MyGymManager/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Tue Dec 03 09:04:46 BRST 2019
+path.2=classes2.dex
 path.1=classes.dex
-renamed.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
-base.1=/home/devscript/MyGymManager/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.2=/home/script/Desktop/MyGymManager/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes2.dex
+base.1=/home/script/Desktop/MyGymManager/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.0=/home/script/Desktop/MyGymManager/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
