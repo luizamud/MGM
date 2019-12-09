@@ -151,9 +151,8 @@ public class Home extends AppCompatActivity {
     }
 
     public void sendAbout(MenuItem item) {
-        //Intent intent = new Intent(this, App_Autoria.class);
-        //startActivity(intent);
-        Toast.makeText(this, "OK", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, App_Autoria.class);
+        startActivity(intent);
     }
 
     public void sendRegister(MenuItem item) {

@@ -1,6 +1,7 @@
 package luizfelipemoralez.amuds.mygymmanager.Controller;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -22,6 +23,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.ActionBarContainer;
 import androidx.appcompat.widget.Toolbar;
@@ -58,6 +60,7 @@ public class Ficha_Usuario extends AppCompatActivity {
     private String genero;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,9 +70,9 @@ public class Ficha_Usuario extends AppCompatActivity {
                 Context.MODE_PRIVATE);
 
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null){
-            actionBar.setDisplayHomeAsUpEnabled(false);
-        }
+
+            actionBar.setDisplayHomeAsUpEnabled(true);
+
 
         id_label_nome = findViewById(R.id.label_nome);
         id_label_genero = findViewById(R.id.label_genero);

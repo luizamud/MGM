@@ -37,17 +37,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_nome" />
 
-    <EditText
-        android:id="@+id/id_qtd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_qtd" />
-
     <TextView
         android:id="@+id/label_intervalo"
         android:layout_width="wrap_content"
@@ -57,17 +46,6 @@
         android:text="@string/intervalo_segundos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_qtd" />
-
-    <EditText
-        android:id="@+id/id_intervalo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_intervalo" />
 
     <RadioGroup
         android:id="@+id/id_list_traning"
@@ -96,5 +74,27 @@
             android:layout_height="wrap_content"
             android:text="@string/treino_c_desc" />
     </RadioGroup>
+
+    <EditText
+        android:id="@+id/id_qtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_qtd" />
+
+    <EditText
+        android:id="@+id/id_intervalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_intervalo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

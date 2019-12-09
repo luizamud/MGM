@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import luizfelipemoralez.amuds.mygymmanager.Model.Treino;
@@ -31,6 +32,7 @@ public class Cadastro_Treino extends AppCompatActivity {
     private RadioButton id_B;
     private RadioButton id_C;
     private String responsive;
+    Intent intent;
 
 
 
@@ -50,6 +52,10 @@ public class Cadastro_Treino extends AppCompatActivity {
         id_A = findViewById(R.id.id_A);
         id_B = findViewById(R.id.id_B);
         id_C = findViewById(R.id.id_C);
+         intent = getIntent();
+        ActionBar actionBar = getSupportActionBar();
+
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
     }
 
@@ -94,9 +100,7 @@ public class Cadastro_Treino extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent = getIntent();
-        setResult(RESULT_CANCELED, intent);
-        finish();
+      cancelar();
     }
 
     @Override
@@ -119,6 +123,10 @@ public class Cadastro_Treino extends AppCompatActivity {
             case R.id.id_adicionar:
                 sendTraining(item);
                 return true;
+
+            case  android.R.id.home:
+                cancelar();
+                return true;
             case R.id.id_clean:
                 sendClear(item);
                 return true;
@@ -129,6 +137,11 @@ public class Cadastro_Treino extends AppCompatActivity {
 
     public void sendTraining(MenuItem item) {
         createObejct();
+    }
+    private void cancelar(){
+
+        setResult(RESULT_CANCELED, intent);
+        finish();
     }
 
     public void sendClear(MenuItem item) {

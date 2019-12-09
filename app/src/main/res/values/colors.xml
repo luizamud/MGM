@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#e67e22</color>
-    <color name="colorPrimaryDark">#d35400</color>
-    <color name="colorAccent">#7f8c8d</color>
     <color name="primary_utfpr_color">#2f3640</color>
     <color name="primary_dark_utfpr_color">#353b48</color>
     <color name="accent_utfpr_color">#f5f6fa</color>
     <color name="image_utfpr_color">#FFFFFF</color>
+        <color name="colorPrimary">#25CCF7</color>
+        <color name="colorPrimaryDark">#182C61</color>
+        <color name="colorAccent">#1B9CFC</color>
+
 </resources>

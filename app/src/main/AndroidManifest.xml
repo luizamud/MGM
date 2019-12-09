@@ -12,10 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Controller.Cadastro_Treino" />
+        <activity android:name=".Controller.Cadastro_Treino" android:parentActivityName=".Controller.Home"/>
         <activity android:name=".Controller.App_Autoria" />
         <activity android:name=".Model.Treino" />
-        <activity android:name=".Controller.Ficha_Usuario" />
+        <activity android:name=".Controller.Ficha_Usuario" android:parentActivityName=".Controller.Home"
+
+            />
         <activity android:name=".Controller.Home" />
         <activity android:name=".Controller.StartApp">
             <intent-filter>
