@@ -65,13 +65,14 @@ public class Ficha_Usuario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ficha_usuario);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDefaultDisplayHomeAsUpEnabled(true);
+
 
         SharedPreferences shared = getApplicationContext().getSharedPreferences(USER_INFO,
                 Context.MODE_PRIVATE);
 
-        ActionBar actionBar = getSupportActionBar();
 
-            actionBar.setDisplayHomeAsUpEnabled(true);
 
 
         id_label_nome = findViewById(R.id.label_nome);
@@ -97,6 +98,7 @@ public class Ficha_Usuario extends AppCompatActivity {
         id_peso = findViewById(R.id.id_peso);
 
         startSpinner();
+
         if(shared != null){
          Preferences(shared);
         }
@@ -136,6 +138,10 @@ public class Ficha_Usuario extends AppCompatActivity {
         id_braco.setText("0.0");
         id_altura.setText("0.0");
         id_peso.setText("0.0");
+
+    }@Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
 
     }
 
@@ -180,9 +186,6 @@ public class Ficha_Usuario extends AppCompatActivity {
         String altura = shared.getString("id_altura", "");
         String peso = shared.getString("id_peso", "");
 
-
-
-
         id_nome.setText(nome);
         id_torax.setText(torax);
         id_cintura.setText(cintura);
@@ -200,13 +203,24 @@ public class Ficha_Usuario extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
        getMenuInflater().inflate(R.menu.menu_salvar,menu);
+
        return  true;
+    }
+
+
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
     }
 
     public void sendRegister(MenuItem item) {
         writer();
         verficaTudo();
     }
+
+    
+
 
     public void sendClear(MenuItem item) {
         limpaTudo();

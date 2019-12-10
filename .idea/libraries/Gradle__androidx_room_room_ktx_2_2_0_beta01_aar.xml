@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.room:room-ktx:2.2.0-beta01@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/87fe1a435cce18eb2efaeacce1fd1545/room-ktx-2.2.0-beta01/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/87fe1a435cce18eb2efaeacce1fd1545/room-ktx-2.2.0-beta01/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32e389dba132fa982b86728514faa5f5/room-ktx-2.2.0-beta01/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32e389dba132fa982b86728514faa5f5/room-ktx-2.2.0-beta01/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/androidx.room/room-ktx/2.2.0-beta01/b29e1edbe16bc8c31aaadd7c286270f96e8009b6/room-ktx-2.2.0-beta01-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.room/room-ktx/2.2.0-beta01/b29e1edbe16bc8c31aaadd7c286270f96e8009b6/room-ktx-2.2.0-beta01-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

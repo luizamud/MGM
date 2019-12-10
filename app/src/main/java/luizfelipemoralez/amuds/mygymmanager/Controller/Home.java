@@ -54,7 +54,7 @@ public class Home extends AppCompatActivity {
             return true;
             }
         }));
-        layoutManager = new LinearLayoutManager(getApplicationContext());
+        layoutManager = new LinearLayoutManager(this);
         id_list.setLayoutManager(layoutManager);
         id_list.setHasFixedSize(true);
         id_list.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
@@ -178,7 +178,7 @@ public class Home extends AppCompatActivity {
 
 
     public void sendPreferences(MenuItem item) {
-        Intent intent = new Intent(this,Ficha_Usuario.class);
+        Intent intent = new Intent(this,Ficha_Usuario.class);;
         startActivity(intent);
     }
 }
